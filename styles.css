@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fac6ef;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 100px;
+  color: #b860db;
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+  user-select: none;
+  height: 15vh;
+  width: 100%;
+}
+
+.imgContainer1 {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imgL {
+  height: 550px;
+  width: 550px;
+  background-image: url(images/L_Big.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  transition: height 0.2s ease-out, width 0.2s ease-out,
+    transform 0.7s ease-in-out;
+  z-index: 2;
+}
+
+.imgL:hover {
+  height: 570px;
+  width: 570px;
+}
+
+.imgL:active {
+  transform: translateX(-375px);
+}
+
+.textL {
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color: #b860db;
+  position: absolute;
+  user-select: none;
+  z-index: 1;
+  height: fit-content;
+  width: 590px;
+  transform: translateX(250px);
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+.imgL:active + .textL {
+  opacity: 100;
+}
+
+.container2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #c398d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.moon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  width: auto;
+}
+
+.moonimg {
+  height: 100%;
+  filter: invert(58%) sepia(12%) saturate(1478%) hue-rotate(233deg)
+    brightness(85%) contrast(88%);
+}
+
+.text2 {
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  border-top: solid 4px #9d74b8;
+  border-bottom: solid 4px #9d74b8;
+  user-select: none;
+  color: #67257a;
+}
+
+.owo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.uwu {
+  text-align: right;
+  padding-right: 40px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1235px) {
+  .text2 {
+    font-size: 25px;
+  }
+
+  .textL {
+    font-size: 35px;
+    width: 500px;
+  }
+
+  .imgL {
+    height: 500px;
+    width: 500px;
+  }
+
+  .imgL:hover {
+    height: 520px;
+    width: 520px;
+  }
+
+  .imgL:active {
+    transform: translateX(-275px);
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .textL {
+    transform: translateX(0px);
+  }
+
+  .imgL {
+    opacity: 100;
+    transition: opacity 0.7s ease-out;
+  }
+
+  .imgL:hover {
+    height: 500px;
+    width: 500px;
+  }
+
+  .imgL:active {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .text2 {
+    font-size: 27px;
+    text-align: center;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .text2 {
+    font-size: 27px;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .textL {
+    transform: translateX(0px);
+  }
+
+  .imgL {
+    opacity: 100;
+    transition: opacity 0.7s ease-out;
+  }
+
+  .imgL:hover {
+    height: 500px;
+    width: 500px;
+  }
+
+  .imgL:active {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .moonimg {
+    height: 75%;
+  }
+
+  .imgL {
+    height: 425px;
+    width: 425px;
+    opacity: 100;
+    transition: opacity 0.7s ease-out;
+  }
+
+  .title {
+    font-size: 85px;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .title2 {
+    width: 70%;
+  }
+
+  .textL {
+    font-size: 35px;
+    width: 350px;
+    text-align: center;
+    transform: translateX(0px);
+  }
+
+  .imgL:hover {
+    height: 425px;
+    width: 425px;
+  }
+
+  .imgL:active {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .imgL {
+    height: 350px;
+    width: 350px;
+    opacity: 100;
+    transition: opacity 0.7s ease-out;
+  }
+
+  .title {
+    font-size: 85px;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .title2 {
+    width: 70%;
+  }
+
+  .textL {
+    font-size: 30px;
+    width: 325px;
+    text-align: center;
+    transform: translateX(0px);
+  }
+
+  .imgL:hover {
+    height: 350px;
+    width: 350px;
+  }
+
+  .imgL:active {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .moonimg {
+    height: 60%;
+  }
+
+  .imgL {
+    height: 300px;
+    width: 300px;
+    opacity: 100;
+    transition: opacity 0.7s ease-out;
+  }
+
+  .title {
+    font-size: 85px;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .title2 {
+    width: 70%;
+  }
+
+  .textL {
+    font-size: 30px;
+    width: 325px;
+    text-align: center;
+    transform: translateX(0px);
+  }
+
+  .imgL:hover {
+    height: 300px;
+    width: 300px;
+  }
+
+  .imgL:active {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .moonimg {
+    height: 50%;
+  }
+
+  .imgL {
+    height: 300px;
+    width: 300px;
+    opacity: 100;
+    transition: opacity 0.7s ease-out;
+  }
+
+  .title {
+    font-size: 70px;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .title2 {
+    width: 70%;
+  }
+
+  .textL {
+    font-size: 27px;
+    width: 300px;
+    text-align: center;
+    transform: translateX(0px);
+  }
+
+  .imgL:hover {
+    height: 300px;
+    width: 300px;
+  }
+
+  .imgL:active {
+    transform: none;
+    opacity: 0;
+  }
+
+  .text2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .moonimg {
+    height: 45%;
+  }
+
+  .imgL {
+    height: 250px;
+    width: 250px;
+    opacity: 100;
+    transition: opacity 0.7s ease-out;
+  }
+
+  .title {
+    font-size: 60px;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .title2 {
+    width: 70%;
+  }
+
+  .textL {
+    font-size: 27px;
+    width: 300px;
+    text-align: center;
+    transform: translateX(0px);
+  }
+
+  .imgL:hover {
+    height: 250px;
+    width: 250px;
+  }
+
+  .imgL:active {
+    transform: none;
+    opacity: 0;
+  }
+
+  .text2 {
+    font-size: 20px;
+  }
+}
