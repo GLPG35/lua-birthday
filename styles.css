@@ -246,8 +246,8 @@ body {
 
 @media only screen and (max-width: 450px) {
   .imgL {
-    height: 350px;
-    width: 350px;
+    height: 325px;
+    width: 325px;
     opacity: 100;
     transition: opacity 0.7s ease-out;
   }
@@ -270,13 +270,33 @@ body {
   }
 
   .imgL:hover {
-    height: 350px;
-    width: 350px;
+    height: 325px;
+    width: 325px;
   }
 
   .imgL:active {
     transform: none;
     opacity: 0;
+  }
+
+  .text2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-height: 745px) {
+  .imgL {
+    height: 300px;
+    width: 300px;
+  }
+
+  .imgL:hover {
+    height: 300px;
+    width: 300px;
+  }
+
+  .title {
+    font-size: 75px;
   }
 }
 
@@ -317,6 +337,16 @@ body {
   .imgL:active {
     transform: none;
     opacity: 0;
+  }
+}
+
+@media only screen and (max-height: 710px) {
+  .text2 {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 60px;
   }
 }
 
