@@ -10,13 +10,13 @@
 }
 
 body {
-  background-color: #fac6ef;
+  background-color: #ffb8de;
 }
 
 .title {
   font-family: "Bebas Neue", sans-serif;
   font-size: 100px;
-  color: #b860db;
+  color: #f06c9b;
   display: flex;
   justify-content: center;
   padding-top: 5vh;
@@ -59,7 +59,7 @@ body {
   font-family: "Courgette", cursive;
   font-weight: bold;
   font-size: 40px;
-  color: #b860db;
+  color: #f06c9b;
   position: absolute;
   user-select: none;
   z-index: 1;
@@ -108,7 +108,7 @@ body {
   border-top: solid 4px #9d74b8;
   border-bottom: solid 4px #9d74b8;
   user-select: none;
-  color: #67257a;
+  color: #642ca9;
 }
 
 .owo {
