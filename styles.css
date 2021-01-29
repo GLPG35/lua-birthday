@@ -10,13 +10,13 @@
 }
 
 body {
-  background-color: #ffb8de;
+  background-color: #cbc5ea;
 }
 
 .title {
   font-family: "Bebas Neue", sans-serif;
   font-size: 100px;
-  color: #f06c9b;
+  color: #73628a;
   display: flex;
   justify-content: center;
   padding-top: 5vh;
@@ -59,7 +59,7 @@ body {
   font-family: "Courgette", cursive;
   font-weight: bold;
   font-size: 40px;
-  color: #f06c9b;
+  color: #73628a;
   position: absolute;
   user-select: none;
   z-index: 1;
@@ -77,11 +77,12 @@ body {
 .container2 {
   height: 100vh;
   width: 100%;
-  background-color: #c398d4;
+  background-color: #4a306d;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  box-shadow: 0px 2vh 20px -3px #00000062 inset;
 }
 
 .moon {
@@ -95,8 +96,8 @@ body {
 
 .moonimg {
   height: 100%;
-  filter: invert(58%) sepia(12%) saturate(1478%) hue-rotate(233deg)
-    brightness(85%) contrast(88%);
+  filter: invert(30%) sepia(14%) saturate(2496%) hue-rotate(224deg)
+    brightness(92%) contrast(92%);
 }
 
 .text2 {
@@ -105,10 +106,10 @@ body {
   height: fit-content;
   width: fit-content;
   position: relative;
-  border-top: solid 4px #9d74b8;
-  border-bottom: solid 4px #9d74b8;
+  border-top: solid 4px #623f8f;
+  border-bottom: solid 4px #623f8f;
   user-select: none;
-  color: #642ca9;
+  color: #eaeaea;
 }
 
 .owo {
